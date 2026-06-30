@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Vizzy Chat</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 Vizzy Chat</h1>
+
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+
+            <textarea
+                id="prompt"
+                placeholder="Ask anything..."
+                onkeydown="handleKey(event)"
+            ></textarea>
+
+            <div class="button-group">
+                           <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+                    />
+
+                    <img
+    id="previewImage"
+    style="
+        display:none;
+        width:250px;
+        margin-top:10px;
+        border-radius:10px;
+    "
+>
+
+               
+
+                <button type="button" onclick="sendMessage()">
+                    💬 Send
+                </button>
+
+                <button type="button" onclick="generateImage()">
+                    🖼️ Generate Image
+                </button>
+
+                <button type="button" onclick="clearChat()">
+                    🗑️ Clear Chat
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
