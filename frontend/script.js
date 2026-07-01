@@ -96,7 +96,7 @@ async function sendMessage() {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/analyze-image",
+                "https://vizzy-chat-e403.onrender.com/analyze-image",
                 {
                     method: "POST",
                     body: formData
@@ -148,7 +148,7 @@ async function sendMessage() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/chat-stream",
+            "https://vizzy-chat-e403.onrender.com/chat-stream",
             {
                 method: "POST",
                 headers: {
@@ -213,7 +213,7 @@ async function generateImage() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/generate-image", {
+        const response = await fetch("https://vizzy-chat-e403.onrender.com/generate-image", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt: prompt })
