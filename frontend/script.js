@@ -2,6 +2,12 @@ const chatBox = document.getElementById("chat-box");
 const imageInput = document.getElementById("imageInput");
 const previewImage = document.getElementById("previewImage");
 
+const chooseImageBtn = document.getElementById("chooseImageBtn");
+
+chooseImageBtn.addEventListener("click", () => {
+    imageInput.click();
+});
+
 // =========================================
 // Image Preview
 // =========================================
